@@ -45,13 +45,13 @@ function textAnimationCode() {
 
 
   document.querySelectorAll(".textwrapper")
-    .forEach(txt => {
+    .forEach(text => {
       let clutter = "";
-      txt.textContent.split(" ").forEach(wrd => {
-        clutter += `<span>${wrd}</span>`;
+      text.textContent.split(" ").forEach(wrds => {
+        clutter += `<span>${wrds}</span>`;
       })
 
-      txt.innerHTML = clutter;
+      text.innerHTML = clutter;
     })
 
   gsap.set(".rowtxts span", { y: "200%" })

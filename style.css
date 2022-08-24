@@ -1,3 +1,20 @@
+@font-face{
+    font-family: Aeonik;
+    src: url(Aeonik-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: Aeonik;
+    src: url(Aeonik_OVERVIEW-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face{
+    font-family: Aeonik;
+    src: url(Aeonik-Bold.ttf);
+    font-weight: 800;
+}
 *{
     margin: 0;
     padding: 0;
@@ -454,7 +471,7 @@ video{
 .card1{
     position: absolute;
     top: 135%;
-    right: 5%;
+    right: 15%;
 }
 .card2{
     position: absolute;
@@ -740,6 +757,9 @@ border-top: 1px solid #444;
     
     #cards>h2{
         font-size: 1.5vh;
+    }
+    #cards .photu{
+        height: 50vw;
     }
     .looks{
         font-size: 6vw; 
