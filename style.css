@@ -46,12 +46,12 @@ html, body{
     background-color:#000;
 }
 #sidebar{
-    height: 70vh;
+    height: 35vh;
     width: 50%;
     background-color:rgb(250, 231, 231);
     position: absolute;
     z-index: 9999;
-    right: -10%;
+    right: -50%;
     top: 0%;  
    
 }
@@ -67,6 +67,8 @@ html, body{
     margin-bottom: 5vh;
     font-size:3vh;
 }
+
+
 #sidebar>i{
     position: relative;
     top: 5%;
@@ -213,7 +215,7 @@ video{
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 100%;
+    width: 100%;
     transform: translate(-50%, -50%);
 }
 
@@ -670,6 +672,17 @@ border-top: 1px solid #444;
     position: relative;
     z-index: 999;
 }
+#social{
+    display: inline-block;
+    margin-top: 5vh;
+}
+
+#social>a{
+  text-decoration: none;
+  margin-right: 3vw;
+  font-size: 2.3vw;
+  color: #fff;
+}
 
 
 /* RESPONSIVE CODE */
@@ -697,6 +710,11 @@ border-top: 1px solid #444;
     #container{
         margin-top: 65vh;
     }
+    
+    
+    #video video{
+        width:150vh;
+    } 
     
     #intro{
         height: initial;
@@ -832,6 +850,9 @@ border-top: 1px solid #444;
     #fright .flast{
         padding: 6vw;
         font-size: 1.5vh;
+    }
+    #social>a{
+        font-size: 3vh;
     }
  }
 

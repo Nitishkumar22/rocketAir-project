@@ -23,10 +23,13 @@ function locomotivejs() {
   ScrollTrigger.refresh();
 }
 
-// document.querySelector("#links>i").addEventListener("click",function(){
-//     document.querySelector("#sidebar").style.right = '3%'
+document.querySelector("#links>i").addEventListener("click",function(){
+    document.querySelector("#sidebar").style.right = '0%'
 
-// })
+})
+document.querySelector("#sidebar>i").addEventListener("click",function(){
+  document.querySelector("#sidebar").style.right ="-50%"
+})
 
 function heroscroll() {
   gsap.to("#hero", {
