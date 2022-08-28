@@ -23,6 +23,11 @@ function locomotivejs() {
   ScrollTrigger.refresh();
 }
 
+// document.querySelector("#links>i").addEventListener("click",function(){
+//     document.querySelector("#sidebar").style.right = '3%'
+
+// })
+
 function heroscroll() {
   gsap.to("#hero", {
     scrollTrigger: {
