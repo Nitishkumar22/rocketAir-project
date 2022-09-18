@@ -23,12 +23,12 @@ function locomotivejs() {
   ScrollTrigger.refresh();
 }
 
-document.querySelector("#links>i").addEventListener("click",function(){
-    document.querySelector("#sidebar").style.right = '0%'
+document.querySelector("#links>i").addEventListener("click", function () {
+  document.querySelector("#sidebar").style.right = '0%'
 
 })
-document.querySelector("#sidebar>i").addEventListener("click",function(){
-  document.querySelector("#sidebar").style.right ="-50%"
+document.querySelector("#sidebar>i").addEventListener("click", function () {
+  document.querySelector("#sidebar").style.right = "-50%"
 })
 
 function heroscroll() {
@@ -104,10 +104,12 @@ function slide() {
   });
 }
 
-gsap.from("#line",{
-  width:0,
-  duration:1
+gsap.from("#line", {
+  width: 0,
+  duration: 1
 })
+
+
 
 
 
@@ -144,9 +146,25 @@ function bglook() {
 }
 
 
-slide()
-locomotivejs();
-heroscroll();
-cardanimation();
-bglook();
-textAnimationCode()
+var circle = document.querySelector("#play")
+document.querySelector("#video").addEventListener("mousemove", function (dets) {
+  circle.style.opacity = 1;
+  circle.style.top = `${dets.y}px`
+  circle.style.left = `${dets.x}px`
+
+})
+var circle2 = document.querySelector("#play")
+document.querySelector("#video").addEventListener("mouseleave", function (dets) {
+  circle2.style.opacity = 0;
+  circle2.style.top = "50%";
+  circle2.style.left = "50%";
+
+})
+
+
+  slide()
+  locomotivejs();
+  heroscroll();
+  cardanimation();
+  bglook();
+  textAnimationCode()
