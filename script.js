@@ -110,6 +110,22 @@ gsap.from("#line", {
 })
 
 
+var circle = document.querySelector("#circle")
+var mincricle = document.querySelector("#mincircle")
+
+circle.addEventListener("mousemove",function(dets){
+  var dime = this.getBoundingClientRect();
+  var yaxis = dets.y - dime.y;
+  var xaxis = dets.x - dime.x;
+  
+    mincricle.style.top = yaxis + "px"
+    mincricle.style.left = xaxis + "px"
+    mincricle.style.backgroundColor = "green"
+})
+circle.addEventListener("mouseleave",function(dets){
+     mincricle.style.top = "50%"
+     mincricle.style.left = "50%"
+})
 
 
 
@@ -160,6 +176,9 @@ document.querySelector("#video").addEventListener("mouseleave", function (dets) 
   circle2.style.left = "50%";
 
 })
+
+
+
 
 
   slide()

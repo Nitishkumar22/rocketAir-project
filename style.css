@@ -351,7 +351,8 @@ video{
 .icon i{
     font-size: 1vw;
 }
-.icon>#right{
+.icon
+>#right{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -411,7 +412,6 @@ video{
     transform: translate(-50%,-50%);
     height: 12vw;
     width: 12vw;
-  
 }
 #circle img{
     width: 100%;
@@ -815,14 +815,14 @@ border-top: 1px solid #444;
     }
 
     #partners{
-        padding: 8vw 0;
+        padding: 2vw 0;
         min-height: initial;
     }
 
     #partners h1{
-        padding: 0vw 3vw;
+        padding: 0vw 2vw;
         font-size: 10vw;
-        margin-bottom: 10vw;
+        margin-bottom: 0vw;
     }
 
     #partners .partner{
